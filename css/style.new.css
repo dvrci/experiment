@@ -1,0 +1,140 @@
+/*
+Colors used:
+(Black): #2D2D2D;
+(Light grey): #F1F2EE;
+(white): #FFFFFF
+(yellow-green): #C2C173
+(pink):#E7D1CE
+*/
+* {
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+}
+
+main {
+  padding-top: 133px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%
+}
+
+nav > ul{
+  list-style-type: none;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a:visited {
+  padding: 0 15px;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #2D2D2D;
+}
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.75em;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #2D2D2D;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #2D2D2D;
+}
+
+a:hover,
+a:focus {
+  color: #2D2D2D;
+  font-weight: 700;
+}
+
+a:active {
+  color: #994c30;
+}
+
+.bigtitles {
+  font-size: 2.5em;
+  background-color: #F1F2EE;
+  border-width: 20px; /* border not working */
+}
+
+.button {
+  display: inline-block;
+  background-color: #ffffff;
+  font-weight: 400px;
+  padding: 10px;
+  border-radius: 0px;
+  border: 2px solid #2D2D2D;
+  transition: 0.2s opacity;
+  text-decoration: none;
+}
+
+.button:hover {
+  font-weight: 700px;
+}
+
+.button:active {
+  font-weight: 700px;
+  }
+
+.logo {
+  max-width: 250px;
+}
+
+.headerpicborder { /* border not showing and margin making the image right alighned :D */
+  border: 20px;
+  border-color: #E7D1CE;
+  margin:20px;
+}
+
+.social {
+  background-color:#F1F2EE;
+  text-align: center;
+  padding: 10px;
+  margin:30px;
+}
+
+#hero {
+  background-color: #C2C173; /* should I be colouring this part green? Will work for mobile but not so sure about tablet&desktop? Should I colour the <p> green and move the other boxed around using floats/playing around with margins? */
+}
