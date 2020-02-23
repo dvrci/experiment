@@ -14,7 +14,7 @@ header {
   background-color: #ffffff;
   text-align: center;
   width: 100%;
-  padding: 10px;
+  padding: 10px 0;
   position: fixed;
 }
 
@@ -24,15 +24,19 @@ main {
 
 nav {
   display: inline-block;
-  width: 100%
-}
+  width: 100%}
 
 nav > ul{
   list-style-type: none;
+  padding: 0;
 }
 
 nav > ul > li {
   display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
 }
 
 nav > ul > li > a:visited {
@@ -93,10 +97,18 @@ a:active {
   color: #994c30;
 }
 
+.active {
+  font-weight: 700;
+}
+
 .bigtitles {
-  font-size: 2.5em;
+  display: flex;  */; /* what type of display so I can float it ontop of the picture? */
+  position:relative;
+  font-size: 1.5em;
   background-color: #F1F2EE;
-  border-width: 20px; /* border not working */
+  padding: 10px;
+  border: 15px solid #ffffff;
+  margin: 0px 25px;
 }
 
 .button {
@@ -119,17 +131,25 @@ a:active {
   }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
-.headerpicborder { /* border not showing and margin making the image right alighned :D */
-  border: 20px;
-  border-color: #E7D1CE;
-  margin:20px;
+.white-border{
+  border: 15px solid #ffffff;
+  margin-bottom: 0; /* how do I get rid of that little gap under pictures? */
+}
+
+.grey-border{
+  border: 15px solid #F1F2EE;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
 .work .row {
-  background: #E7D1CE;
+  background: #E7D1CE;/* coloring this part pink works for mobile...but I only want a pink box behin the picture on other devices later...? */
+  padding: 20px;
 }
 
 .social {
@@ -139,6 +159,16 @@ a:active {
   margin:30px;
 }
 
+.social-icon {
+width: 30px;
+height:30px;
+fill:#2D2D2D;
+}
+
+.work {
+
+}
 #hero {
   background-color: #C2C173; /* should I be colouring this part green? Will work for mobile but not so sure about tablet&desktop? Should I colour the <p> green and move the other boxed around using floats/playing around with margins? */
+  padding: 20px;
 }
