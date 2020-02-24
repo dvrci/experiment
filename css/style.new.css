@@ -14,8 +14,9 @@ header {
   background-color: #ffffff;
   text-align: center;
   width: 100%;
-  padding: 10px 0;
+  padding-top: 10px;
   position: fixed;
+  z-index: 999999;
 }
 
 main {
@@ -102,14 +103,16 @@ a:active {
 }
 
 .bigtitles {
-  display: flex;  */; /* what type of display so I can float it ontop of the picture? */
-  position:relative;
-  font-size: 1.5em;
+  font-size: 1em;
   background-color: #F1F2EE;
   padding: 10px;
   border: 15px solid #ffffff;
-  margin: 0px 25px;
+  margin: -40px auto 0;
+  position: relative;
+  z-index: 2;
+  max-width: 80%;
 }
+
 
 .button {
   display: inline-block;
@@ -136,7 +139,8 @@ a:active {
 
 .white-border{
   border: 15px solid #ffffff;
-  margin-bottom: 0; /* how do I get rid of that little gap under pictures? */
+  position:relative;
+  z-index: 1; /* how do I get rid of that little gap under pictures? */
 }
 
 .grey-border{
@@ -161,7 +165,6 @@ a:active {
 
 .social-icon {
 width: 30px;
-height:30px;
 fill:#2D2D2D;
 }
 
