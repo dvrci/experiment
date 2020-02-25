@@ -15,6 +15,7 @@ header {
   text-align: center;
   width: 100%;
   padding-top: 10px;
+  /* border-bottom: 3px solid #F1F2EE >>> MAYBE FOR PROJECT PAGES ONLY*/
   position: fixed;
   z-index: 999999;
 }
@@ -54,6 +55,7 @@ body {
 }
 h1, h2, h3, h4 {
   line-height: 1.4;
+  margin: 10px;
 }
 h1 {
   font-family: 'Roboto', sans-serif;
@@ -98,6 +100,12 @@ a:active {
   color: #994c30;
 }
 
+.padding-projects {
+  padding-left: 20px;
+  padding-right:20px;
+  padding-bottom: 20px;
+}
+
 .active {
   font-weight: 700;
 }
@@ -105,7 +113,6 @@ a:active {
 .bigtitles {
   font-size: 1em;
   background-color: #F1F2EE;
-  padding: 10px;
   border: 15px solid #ffffff;
   margin: -40px auto 0;
   position: relative;
@@ -140,7 +147,7 @@ a:active {
 .white-border{
   border: 15px solid #ffffff;
   position:relative;
-  z-index: 1; /* how do I get rid of that little gap under pictures? */
+  z-index: 1;
 }
 
 .grey-border{
@@ -148,19 +155,14 @@ a:active {
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
-}
-
-.work .row {
-  background: #E7D1CE;/* coloring this part pink works for mobile...but I only want a pink box behin the picture on other devices later...? */
-  padding: 20px;
+  padding: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
 .social {
   background-color:#F1F2EE;
   text-align: center;
   padding: 10px;
-  margin:30px;
+  margin-top: 20px;
 }
 
 .social-icon {
@@ -168,10 +170,48 @@ width: 30px;
 fill:#2D2D2D;
 }
 
-.work {
-
-}
-#hero {
-  background-color: #C2C173; /* should I be colouring this part green? Will work for mobile but not so sure about tablet&desktop? Should I colour the <p> green and move the other boxed around using floats/playing around with margins? */
+.work .row {
+  background: #E7D1CE;/* coloring this part pink works for mobile...but I only want a pink box behin the picture on other devices later...? */
   padding: 20px;
+}
+
+.skills-tools {
+  background: rgb(194,193,115);
+  background: linear-gradient(180deg, rgba(194,193,115,1) 0%, rgba(194,193,115,1) 80%, rgba(255,255,255,1) 80*9-/%);
+}
+
+.skills-tools .col {
+  background-color: #F1F2EE;
+  border: 15px solid #ffffff;
+  margin: 15px;
+}
+
+.row .col > ul > li { /* not working */
+  list-style-type: none;
+  padding: 0;
+}
+
+#hero {
+  background-color: #C2C173;
+  padding: 20px;
+}
+
+#hero-about {
+  background-color: #E7D1CE;
+  padding: 20px;
+}
+
+#center-text {
+  text-align: center;
+}
+
+#tools {
+  position: relative;
+  z-index: 1;
+}
+
+#copyright {
+  text-align: center;
+  font-size: 0.75em;
+  margin: 10px;
 }

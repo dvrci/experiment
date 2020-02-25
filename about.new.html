@@ -14,13 +14,15 @@
 
 <body>
 
+  <!-- header -->
+
   <header>
     <div class="container">
       <img class="logo" src="img/logo.svg" alt="Divarci Logo">
       <nav>
         <ul>
-          <li><a href="index.new.html" class="active">HOME</a></li>
-          <li><a href="about.new.html">ABOUT</a></li>
+          <li><a href="index.new.html">HOME</a></li>
+          <li><a href="about.new.html" class="active">ABOUT</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
@@ -29,66 +31,70 @@
 
   <main>
 
-    <!-- hero -->
-    <div id="hero">
+<!-- hero-about -->
+
+    <div id="hero-about">
       <div class="container">
         <div class="row">
           <div class="col">
             <picture>
-              <source srcset="img/hp_profile_img_1x.JPG" media="(max-width:767px)">
-              <img class="white-border"src="img/hp_profile_img_2x.JPG" alt="Nimet profile picture">
+              <source srcset="img/about_profile_img_1x.jpg" media="(max-width:767px)">
+              <img class="white-border"src="img/about_profile_img_2x.jpg" alt="Nimet profile picture">
             </picture>
           </div>
           <div class="bigtitles">
-            <h2>IF UX DOESN'T SOLVE A PROBLEM IT'S AN ART PROJECT</h2>
+            <h2 id="center-text">MY STORY</h2>
           </div>
         </div>
-        <p>
-          Hello! I’m Nimet, A Berlin based, multilingual UX Designer currently working at idealo. I’m a people’s person. I’m a doer. But most importantly I’m myself.
-        </p>
+        <p>I am a Berlin based, multilingual (ich spreche auch Deutsch!) UX Designer with over 6 years experience in e-commerce. I believe user needs and business needs go hand in hand.</p>
+        <p>My previous experience as an e-commerce manager gave me a unique point of view making me creative and simultaneously pragmatic, enabling me to  translate user needs into business needs and seeing the bigger picture.</p>
+        <p>I love creating structured ways of working, bringing people together and making day to day life fun and work engaging.</p>
+        <p>Aside from the world of UX, I enjoy traveling around Europe and catching up with friends in different cities- I love learning new skills and exposing myself to new situations.</p>
       </div>
+      <a href="files/Nimet_Divarci_UX_CV.pdf" target="_blank" class="button contact">Take a look at my CV</a>
     </div>
 
+<!-- skills & tools -->
 
+    <div class="skills-tools">
 
-    <!-- work -->
-    <div class="work">
       <div class="container">
         <div class="row">
-          <div class="col bg">
-            <div>
-              <picture>
-                <source srcset="img/index_Slyst_1x.jpg" media="(max-width:767px)">
-                <img class="grey-border" src="img/index_Slyst_2x.jpg" alt="Project slyst">
-              </picture>
-            </div>
-          </div>
-          <div class="col">
-            <h2> S.LYST- A LIST APP</h2>
-            <p>A responsive web app that allows users to create different types of lists and enables them to share these with their friends and family.</p>
-            <a href="slyst.new.html" class="button">VIEW PROJECT</a>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="work">
-      <div class="container">
-        <div class="row">
-          <div class="col bg">
+          <div class="col">
             <div>
-              <picture>
-                <!-- chnge picture -->
-                <source srcset="img/index_Slyst_1x.jpg" media="(max-width:767px)">
-                <img  class="grey-border"src="img/index_Slyst_2x.jpg" alt="Project Feedback elements">
-              </picture>
+              <h3 id="center-text">Skills</h3>
+              <ul>
+                <li>User research</li>
+                <li>Quantitative Testing</li>
+                <li>Interview Techniques</li>
+                <li>Design thinking workshops</li>
+                <li>Trainings in agile frameworks Scrum & Kanban</li>
+                <li>Wireframing</li>
+                <li>Project Management</li>
+                <li>Frontend development basics</li>
+                <li>Animationn</li>
+                <li>Rapid Prototyping</li>
+                <li>Account management</li>
+              </ul>
             </div>
           </div>
-          <div class="col">
-            <h2> FEEDBACK ELEMENTS RE-DESIGN</h2>
-            <p>Updating and unifying feedback elements for idealo’s Pattern Library to allow for consistent UI across all teams and product areas.</p>
-            <a href="feedback_elements.new.html" class="button">VIEW PROJECT</a>
+
+          <div class="col" id="tools">
+            <div>
+              <h3 id="center-text">Tools</h3>
+              <ul>
+                <li>Sketch</li>
+                <li>Principle</li>
+                <li>Zeplin</li>
+                <li>Axure</li>
+                <li>Invision</li>
+                <li>Jira</li>
+                <li>Trello</li>
+              </ul>
+            </div>
           </div>
+
         </div>
       </div>
     </div>
