@@ -15,7 +15,6 @@ header {
   text-align: center;
   width: 100%;
   padding-top: 10px;
-  /* border-bottom: 3px solid #F1F2EE >>> MAYBE FOR PROJECT PAGES ONLY*/
   position: fixed;
   z-index: 999999;
 }
@@ -55,7 +54,7 @@ body {
 }
 h1, h2, h3, h4 {
   line-height: 1.4;
-  margin: 10px;
+
 }
 h1 {
   font-family: 'Roboto', sans-serif;
@@ -110,16 +109,28 @@ a:active {
   font-weight: 700;
 }
 
-.bigtitles {
+.bigtitles-light {
+  font-size: 1em;
+  background-color: #F1F2EE;
+  border: 15px solid #ffffff;
+  padding-left: 20px;
+  margin: -40px auto 0;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 220px;
+}
+
+.bigtitles-projects {
   font-size: 1em;
   background-color: #F1F2EE;
   border: 15px solid #ffffff;
   margin: -40px auto 0;
   position: relative;
   z-index: 2;
-  max-width: 80%;
+  width: 100%;
+  max-width: 220px;
 }
-
 
 .button {
   display: inline-block;
@@ -156,13 +167,14 @@ a:active {
 
 .row {
   padding: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .social {
   background-color:#F1F2EE;
   text-align: center;
   padding: 10px;
-  margin-top: 20px;
 }
 
 .social-icon {
@@ -171,22 +183,23 @@ fill:#2D2D2D;
 }
 
 .work .row {
-  background: #E7D1CE;/* coloring this part pink works for mobile...but I only want a pink box behin the picture on other devices later...? */
+  background: #E7D1CE;
   padding: 20px;
 }
 
 .skills-tools {
   background: rgb(194,193,115);
-  background: linear-gradient(180deg, rgba(194,193,115,1) 0%, rgba(194,193,115,1) 80%, rgba(255,255,255,1) 80*9-/%);
+  background:   linear-gradient(180deg, rgb(194, 193, 115) 0%, rgb(194, 193, 115) 80%, rgb(255, 255, 255) 80%)
 }
 
 .skills-tools .col {
   background-color: #F1F2EE;
   border: 15px solid #ffffff;
   margin: 15px;
+  padding-left: 20px;
 }
 
-.row .col > ul > li { /* not working */
+.col > div > ul{ /* not working */
   list-style-type: none;
   padding: 0;
 }
@@ -206,6 +219,9 @@ fill:#2D2D2D;
 }
 
 #tools {
+  margin: 0 auto;
+  width: 50%;
+  max-width: 220px;
   position: relative;
   z-index: 1;
 }
