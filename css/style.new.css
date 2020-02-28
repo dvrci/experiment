@@ -217,6 +217,12 @@ a:active {
   fill: #2D2D2D;
 }
 
+.animation-height {
+  width 100%;
+  max-width 100%;
+  height: auto;
+}
+
 .work .row {
   background: #E7D1CE;
   padding: 20px;
@@ -411,4 +417,53 @@ a:active {
   margin-right: auto;
 }
 
+}
+
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes arrow-nudge {
+  from {transform: translate(446px,30px);}
+  to {transform: translate(448px, 30px);}
+}
+
+.arrow{
+  width:20px; /* not working */
+  animation-duration: 0.5s;
+  animation-name: cloud-move; /* stops working when I replace with "arrow nudge" */
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
