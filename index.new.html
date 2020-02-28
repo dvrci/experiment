@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body>
+<body class="container">
 
   <header>
     <div class="container">
@@ -32,20 +32,22 @@
     <!-- hero -->
     <div id="hero">
       <div class="container">
-        <div class="row">
+        <div class="row-home">
           <div class="col">
             <picture>
               <source srcset="img/hp_profile_img_1x.JPG" media="(max-width:767px)">
               <img class="white-border"src="img/hp_profile_img_2x.JPG" alt="Nimet profile picture">
             </picture>
           </div>
-          <div class="bigtitles-light">
-            <h2>IF UX DOESN'T SOLVE A PROBLEM IT'S AN ART PROJECT</h2>
+          <div class="bigtitles-home">
+            <h2 class="my-story">IF UX DOESN'T SOLVE A PROBLEM IT'S AN ART PROJECT</h2>
           </div>
         </div>
+        <div class="home-text">
         <p>
           Hello! I’m Nimet, A Berlin based, multilingual UX Designer currently working at idealo. I’m a people’s person. I’m a doer. But most importantly I’m myself.
         </p>
+        </div>
       </div>
     </div>
 
@@ -55,16 +57,17 @@
     <div class="work">
       <div class="container">
         <div class="row">
-          <div class="col bg">
+          <div class="col-md-6 col bg">
             <div>
               <picture>
+                <!-- chnge picture -->
                 <source srcset="img/index_Slyst_1x.jpg" media="(max-width:767px)">
-                <img class="grey-border" src="img/index_Slyst_2x.jpg" alt="Project slyst">
+                <img  class="grey-border"src="img/index_Slyst_2x.jpg" alt="Project Feedback elements">
               </picture>
             </div>
           </div>
-          <div class="col">
-            <h2> S.LYST- A LIST APP</h2>
+          <div class="col-md-6 col">
+            <h2>S.LYST - A LIST APP</h2>
             <p>A responsive web app that allows users to create different types of lists and enables them to share these with their friends and family.</p>
             <a href="slyst.new.html" class="button">VIEW PROJECT</a>
           </div>
@@ -75,7 +78,7 @@
     <div class="work">
       <div class="container">
         <div class="row">
-          <div class="col bg">
+          <div class="col-md-6 col bg">
             <div>
               <picture>
                 <!-- chnge picture -->
@@ -84,7 +87,7 @@
               </picture>
             </div>
           </div>
-          <div class="col">
+          <div class="col-md-6 col">
             <h2> FEEDBACK ELEMENTS RE-DESIGN</h2>
             <p>Updating and unifying feedback elements for idealo’s Pattern Library to allow for consistent UI across all teams and product areas.</p>
             <a href="feedback_elements.new.html" class="button">VIEW PROJECT</a>

@@ -5,6 +5,21 @@ Colors used:
 (white): #FFFFFF
 (yellow-green): #C2C173
 (pink):#E7D1CE
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
 */
 * {
   box-sizing: border-box;
@@ -16,31 +31,36 @@ header {
   width: 100%;
   padding-top: 10px;
   position: fixed;
+  top:0;
+  left:0;
   z-index: 999999;
+  height:120px;
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 120px;
+
 }
 
 nav {
   display: inline-block;
-  width: 100%}
+  width: 100%
+}
 
-nav > ul{
+nav>ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li {
+nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   padding: 0 15px;
 }
 
@@ -52,10 +72,11 @@ body {
   line-height: 1.6;
   color: #2D2D2D;
 }
+
 h1, h2, h3, h4 {
   line-height: 1.4;
-
 }
+
 h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 2.75em;
@@ -71,6 +92,7 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -101,7 +123,7 @@ a:active {
 
 .padding-projects {
   padding-left: 20px;
-  padding-right:20px;
+  padding-right: 20px;
   padding-bottom: 20px;
 }
 
@@ -109,7 +131,7 @@ a:active {
   font-weight: 700;
 }
 
-.bigtitles-light {
+.bigtitles-home {
   font-size: 1em;
   background-color: #F1F2EE;
   border: 15px solid #ffffff;
@@ -118,7 +140,19 @@ a:active {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 220px;
+  max-width: 240px;
+}
+
+.bigtitles-about {
+  font-size: 1em;
+  background-color: #F1F2EE;
+  border: 15px solid #ffffff;
+  padding-left: 20px;
+  margin: -50px auto 0;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 140px;
 }
 
 .bigtitles-projects {
@@ -149,37 +183,38 @@ a:active {
 
 .button:active {
   font-weight: 700px;
-  }
+}
 
 .logo {
   max-width: 150px;
 }
 
-.white-border{
+.white-border {
   border: 15px solid #ffffff;
-  position:relative;
+  position: relative;
   z-index: 1;
 }
 
-.grey-border{
+.grey-border {
   border: 15px solid #F1F2EE;
 }
 
 .row {
-  padding: 25px 0; /* 25px top and bottom, 0 left and right */
+  padding: 25px 0;
+  /* 25px top and bottom, 0 left and right */
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .social {
-  background-color:#F1F2EE;
+  background-color: #F1F2EE;
   text-align: center;
   padding: 10px;
 }
 
 .social-icon {
-width: 30px;
-fill:#2D2D2D;
+  width: 30px;
+  fill: #2D2D2D;
 }
 
 .work .row {
@@ -188,25 +223,26 @@ fill:#2D2D2D;
 }
 
 .skills-tools {
-  background: rgb(194,193,115);
-  background:   linear-gradient(180deg, rgb(194, 193, 115) 0%, rgb(194, 193, 115) 80%, rgb(255, 255, 255) 80%)
+  background: rgb(194, 193, 115);
+  background: linear-gradient(180deg, rgb(194, 193, 115) 0%, rgb(194, 193, 115) 80%, rgb(255, 255, 255) 80%)
 }
 
 .skills-tools .col {
   background-color: #F1F2EE;
   border: 15px solid #ffffff;
+  max-width: 290px;
   margin: 15px;
   padding-left: 20px;
 }
 
-.col > div > ul{ /* not working */
+.col>div>ul {
   list-style-type: none;
   padding: 0;
 }
 
 #hero {
   background-color: #C2C173;
-  padding: 20px;
+  padding:20px;
 }
 
 #hero-about {
@@ -219,7 +255,6 @@ fill:#2D2D2D;
 }
 
 #tools {
-  margin: 0 auto;
   width: 50%;
   max-width: 220px;
   position: relative;
@@ -230,4 +265,150 @@ fill:#2D2D2D;
   text-align: center;
   font-size: 0.75em;
   margin: 10px;
+}
+
+@media only screen and (min-width: 640px) {
+
+
+  [class*="col-"] {
+    float: left;
+  }
+
+  .col-md-6 {
+  width: 50%;
+  padding: 20px;
+  }
+
+  .col-md-7 {
+  width: 58.33%;
+  padding: 20px;
+  }
+
+  .col-md-5 {
+  width: 41.66%;
+  padding: 20px;
+  }
+
+  header {
+    text-align: unset;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+
+  main {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 100px;
+  }
+
+  .padding-projects {
+    padding-left: unset;
+    padding-right: unset;
+    padding-bottom: unset;
+  }
+
+  .row {
+    padding: 25px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+  .white-border {
+   max-width: 750px;
+  }
+
+  .bigtitles-home {
+    margin-top: -20%;
+    margin-bottom: auto;
+    margin-left: 50%;
+    margin-right: auto;
+
+  }
+
+  .home-text{
+    padding:20px 0px 0px 0px;
+    margin-left: 35%;
+  }
+
+  .about-text-button {
+    margin-left: 35%;
+    }
+
+  .social {
+  margin-left: 30px;
+  margin-right: 30px;
+  }
+
+  .skills-tools {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, rgba(194,193,115,1) 45%);
+  }
+
+  .work .row {
+  background: rgb(231,209,206);
+  background: linear-gradient(90deg, rgba(231,209,206,1) 0%, rgba(231,209,206,1) 40%, rgba(255,255,255,1) 40%);
+  }
+
+  .skills-tools .col {
+    background-color: #F1F2EE;
+    border: 15px solid #ffffff;
+    padding-left: 20px;
+    margin: 0px 20px 0 20px;
+}
+
+  #about-page h3 {   /* not working */
+  margin-top: 0;
+  }
+
+  #hero {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, rgba(194,193,115,1) 30%);
+  }
+
+  #hero-about {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 30%, rgba(231, 209, 206, 1) 30%);
+  }
+
+  #tools {
+    margin-left: 0px;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bigtitles-home {
+  margin-top: -20%;
+  margin-bottom: auto;
+  margin-left: 50%;
+  margin-right: auto;
+
+}
+
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 }
