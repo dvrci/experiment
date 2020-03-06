@@ -39,12 +39,20 @@ header {
 
 main {
   padding-top: 120px;
-
 }
 
 nav {
   display: inline-block;
-  width: 100%
+  width: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #2D2D2D;
 }
 
 nav>ul {
@@ -62,15 +70,6 @@ nav>ul>li>a {
 
 nav>ul>li>a:visited {
   padding: 0 15px;
-}
-
-body {
-  background-color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #2D2D2D;
 }
 
 h1, h2, h3, h4 {
@@ -119,12 +118,6 @@ a:focus {
 
 a:active {
   color: #994c30;
-}
-
-.padding-projects {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
 }
 
 .active {
@@ -178,11 +171,40 @@ a:active {
 }
 
 .button:hover {
-  font-weight: 700px;
+  font-weight: 700;
 }
 
 .button:active {
-  font-weight: 700px;
+  font-weight: 700;
+}
+
+.hvr-overline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-overline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  top: 0;
+  background: #2098D1;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-overline-from-left:hover:before, .hvr-overline-from-left:focus:before, .hvr-overline-from-left:active:before {
+  right: 0;
 }
 
 .logo {
@@ -202,14 +224,13 @@ a:active {
 .row {
   padding: 25px 0;
   /* 25px top and bottom, 0 left and right */
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .social {
   background-color: #F1F2EE;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 .social-icon {
@@ -217,20 +238,18 @@ a:active {
   fill: #2D2D2D;
 }
 
-.animation-height {
-  width 100%;
-  max-width 100%;
-  height: auto;
+.padding-projects {
+  margin: 0px 30px 30px 30px;
 }
 
 .work .row {
   background: #E7D1CE;
-  padding: 20px;
+  padding: 30px;
 }
 
 .skills-tools {
-  background: rgb(194, 193, 115);
-  background: linear-gradient(180deg, rgb(194, 193, 115) 0%, rgb(194, 193, 115) 80%, rgb(255, 255, 255) 80%)
+  background: #C2C173;
+  text-align: center;
 }
 
 .skills-tools .col {
@@ -238,7 +257,12 @@ a:active {
   border: 15px solid #ffffff;
   max-width: 290px;
   margin: 15px;
-  padding-left: 20px;
+  padding: 20px;
+}
+
+.social>h2 {
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .col>div>ul {
@@ -248,12 +272,12 @@ a:active {
 
 #hero {
   background-color: #C2C173;
-  padding:20px;
+  padding:30px;
 }
 
 #hero-about {
   background-color: #E7D1CE;
-  padding: 20px;
+  padding: 30px;
 }
 
 #center-text {
@@ -261,8 +285,6 @@ a:active {
 }
 
 #tools {
-  width: 50%;
-  max-width: 220px;
   position: relative;
   z-index: 1;
 }
@@ -280,19 +302,8 @@ a:active {
     float: left;
   }
 
-  .col-md-6 {
-  width: 50%;
-  padding: 20px;
-  }
-
-  .col-md-7 {
-  width: 58.33%;
-  padding: 20px;
-  }
-
-  .col-md-5 {
-  width: 41.66%;
-  padding: 20px;
+  h3{
+    margin:0;
   }
 
   header {
@@ -310,17 +321,29 @@ a:active {
     margin-top: 4px;
   }
 
-
-  main {
-    margin-left: 30px;
-    margin-right: 30px;
-    padding-top: 100px;
+  .col-md-3 {
+    width: 25%;
+    padding: 20px;
   }
 
-  .padding-projects {
-    padding-left: unset;
-    padding-right: unset;
-    padding-bottom: unset;
+  .col-md-4 {
+    width: 33.33%;
+    padding: 20px;
+  }
+
+  .col-md-6 {
+  width: 50%;
+  padding: 20px;
+  }
+
+  .col-md-7 {
+  width: 58.33%;
+  padding: 20px;
+  }
+
+  .col-md-5 {
+  width: 41.66%;
+  padding: 20px;
   }
 
   .row {
@@ -339,7 +362,6 @@ a:active {
     margin-bottom: auto;
     margin-left: 50%;
     margin-right: auto;
-
   }
 
   .home-text{
@@ -369,14 +391,8 @@ a:active {
   .skills-tools .col {
     background-color: #F1F2EE;
     border: 15px solid #ffffff;
-    padding-left: 20px;
     margin: 0px 20px 0 20px;
 }
-
-  #about-page h3 {   /* not working */
-  margin-top: 0;
-  }
-
   #hero {
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, rgba(194,193,115,1) 30%);
@@ -394,7 +410,8 @@ a:active {
 }
 
 @media only screen and (min-width: 1024px) {
-  .container {
+  .container { /* I tried re-naming this class to "max-width" here and in html, but when I do the nav elements do not adhere to the max width of 1200 px. Same if I remove top and left from header */
+  margin-top: 0;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -402,11 +419,21 @@ a:active {
 
 .bigtitles-home {
   margin-top: -20%;
-  margin-bottom: auto;
   margin-left: 50%;
   margin-right: auto;
-
 }
+.col-lg-1 {width: 8.33%;}
+.col-lg-2 {width: 16.66%;}
+.col-lg-3 {width: 25%;}
+.col-lg-4 {width: 33.33%;}
+.col-lg-5 {width: 41.66%;}
+.col-lg-6 {width: 50%;}
+.col-lg-7 {width: 58.33%;}
+.col-lg-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
 }
 
@@ -457,13 +484,4 @@ a:active {
 @keyframes arrow-nudge {
   from {transform: translate(446px,30px);}
   to {transform: translate(448px, 30px);}
-}
-
-.arrow{
-  width:20px; /* not working */
-  animation-duration: 0.5s;
-  animation-name: cloud-move; /* stops working when I replace with "arrow nudge" */
-  animation-iteration-count: 3;
-  animation-direction: alternate;
-  animation-timing-function: linear;
 }
