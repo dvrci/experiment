@@ -28,7 +28,7 @@ Colors used:
 header {
   background-color: #ffffff;
   width: 100%;
-  padding-top: 10px;
+  padding: 10px 30px 4px;
   position: fixed;
   top:0;
   left:0;
@@ -38,11 +38,6 @@ header {
 
 main {
   padding-top: 120px;
-}
-
-nav {
-  display: inline-block;
-  width: 100%;
 }
 
 body {
@@ -57,6 +52,7 @@ body {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -66,6 +62,7 @@ nav>ul>li>a {
 nav>ul>li>a:visited {
   padding: 0 15px;
 }
+
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -265,6 +262,36 @@ a:active {
   padding: 0;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 #hero {
   background-color: #C2C173;
   padding:30px;
@@ -314,6 +341,10 @@ a:active {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  nav > ul {
+    margin: 1em 0;
   }
 
   nav>ul>li {
@@ -392,6 +423,15 @@ a:active {
     border: 15px solid #ffffff;
     margin: 0px 20px 0 20px;
 }
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
   #hero {
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 30%, rgba(194,193,115,1) 30%);
