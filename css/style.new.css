@@ -33,11 +33,10 @@ header {
   top:0;
   left:0;
   z-index: 999999;
-  height:120px;
 }
 
 main {
-  padding-top: 120px;
+  padding-top: 59px;
 }
 
 body {
