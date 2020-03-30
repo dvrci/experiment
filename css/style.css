@@ -129,8 +129,8 @@ a:active {
 .bigtitles-home {
   font-size: 1em;
   background-color: #f1f2ee;
-  border: 15px solid #fff;
-  padding-left: 20px;
+  border: 10px solid #fff;
+  padding: 20px;
   margin: -40px auto 0;
   position: relative;
   z-index: 2;
@@ -141,7 +141,7 @@ a:active {
 .bigtitles-about {
   font-size: 1em;
   background-color: #f1f2ee;
-  border: 15px solid #fff;
+  border: 10px solid #fff;
   padding-left: 20px;
   margin: -50px auto 0;
   position: relative;
@@ -153,7 +153,7 @@ a:active {
 .bigtitles-projects {
   font-size: 1em;
   background-color: #f1f2ee;
-  border: 15px solid #fff;
+  border: 10px solid #fff;
   margin: -40px auto 0;
   position: relative;
   z-index: 2;
@@ -216,7 +216,7 @@ a:active {
 }
 
 .white-border {
-  border: 15px solid #fff;
+  border: 10px solid #fff;
   position: relative;
   z-index: 1;
 }
@@ -278,7 +278,7 @@ a:active {
 
 .skills-tools .col {
   background-color: #f1f2ee;
-  border: 15px solid #fff;
+  border: 10px solid #fff;
   max-width: 290px;
   margin: 30px;
   padding: 20px;
