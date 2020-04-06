@@ -283,6 +283,9 @@ a:active {
   margin: 30px;
   padding: 20px;
 }
+.personas {
+  max-width: 800px;
+}
 
 .social>h2 {
   margin: 0;
