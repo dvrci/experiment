@@ -37,64 +37,61 @@
       <!-- project hero -->
       <div id="hero-project">
         <div class="container">
-          <h1 style="text-align: center;">FEEDBACK ELEMENTS FOR THE PATTERN LIBRARY</h1>
+          <h1 style="text-align: center;">PORTFOLIO WEBSITE</h1>
           <picture>
-            <source srcset="img/feedback_elements/fe_project_banner_desktop_x1.jpg" media="(max-width:767px)">
-            <img class="grey-border" src="img/feedback_elements/fe_project_banner_desktop_x2.jpg" alt="Project Feedback elements">
+            <source srcset="img/portfolio_website/portfolio_project_banner_mobile_x1.jpg" media="(max-width:767px)">
+            <img class="grey-border" src="img/portfolio_website/portfolio_project_banner_desktop_x2.jpg" alt="Project Feedback elements">
           </picture>
         </div>
       </div>
 
       <section>
         <div class="text-width-projects">
-          <h2>About the project</h2>
+          <h2>Overview</h2>
           <p>
-            The pattern library is a project spearheaded by a group of 7 UX designers. It also includes 4 frontend developers and is voluntary, meaning all members work on Pattern Library topics additionally to their day to day work.
-          </p>
+            After gaining some invaluable experience in user experience and UI design, I felt the next natural step was to add to my skill set by learning the basics of front end development. This project sharpened my attention to detail during the design and wireframing phase, enabled me to improve communication with front-end engineers and deliver responsive designs that were easy and realistic to implement.          </p>
           <p>
-            The aim is to unify the UI across a many teams and product areas (there are 300 people working in the area product and technology alone).
-          </p>
-        </div>
-
-          <div>
-          <picture>
-            <source srcset="img/feedback_elements/pattern_library_1x.jpg" media="(max-width:767px)">
-            <img class="project-images" src="img/feedback_elements/pattern_library_2x.jpg" alt="meeting pattern library">
-          </picture>
+            Additionally I was able to build a UX portfolio from scratch, showcasing past showcase projects and new skills in HTML, CSS and Javascript.          </p>
         </div>
       </section>
 
       <section>
         <div class="text-width-projects">
-          <h2>Aim</h2>
+          <h2>Tools used</h2>
           <p>
-            The topic Feedback Elements came up whilst working on another project where I wanted to use toasts. These however were not yet defined, and it turned out feedback elements generally varied greatly in design and functionality.
-          </p>
-          <p>
-            The aim was to unify all feedback elements, define behaviour and most importantly find a solution that fits so many teams and such a huge product. To tackle this I worked with another fellow UX designer for approximately 4 months.
-          </p>
+            Atom, GitHub Desktop/online platform, Sketch, W3C Markup Validation Service, WebAIM Contrast Checker, Codepen.io, GoogleFonts API          </p>
         </div>
       </section>
 
       <section>
         <div class="text-width-projects">
-          <h2>Research</h2>
+          <h2>Process and Insights</h2>
           <p>
-            We started right at the beginning: defining feedback elements and deciding which current elements belong in the category. For this we did a competitor analysis and ask our team what their definition was.
-            We decided on Inline banners, system banners, toasts, modals, in-context-popups and tooltips.
+            I started by doing desk research on UX portfolio best practices and took note what stood out to me personally. Generally I noticed that the content of UX/UI portfolios were quite similar, nearly all included basics such as past projects, an about section and contact details. What stood out was how creatively some translated these contents and were able to bring across their personality, which became a big focus for me.
+          <p>
+            This was one reason why I decided to re-do the first part of the course using my own designs, instead of using wireframes provided. I wanted my website to be personalized and stand-out. To gage whether the designs were manageable with the skills I would learn throughout the course I discussed these with my mentor (who said it was more challenging than the standard template, but doable)
           </p>
           <p>
-            The next step was to collect the status quo, which we did by asking all UX designers to collect all feedback elements from their area. The frontend devs helped, as some scenarios were hard to recreate and many were hidden.
+            Once getting reassurance from my mentor, I set out to define the visual part of my portfolio, deciding on colours, fonts, icons.
           </p>
           <p>
-            After collecting them we resorted all elements into the six categories mentioned above, which gave us a good idea what we were working with.
+            The next (and hardest) part was to translate the designs into a working website. I learned how to structure html pages and styled these using CSS and Javascript. The designs were very challenging, as there was a lot of change depending on the viewport. As a result I became very familiar with media queries. Another part of the course was to build a hamburger menu for mobile viewports. I decided to take this out, as I didn’t feel it was necessary for the three menu items.
+          </p>
+        </div>
+
+        <div>
+        <picture>
+          <source srcset="img/feedback_elements/FE_infog_x1.png" media="(max-width:767px)">
+          <img class="project-images" src="img/feedback_elements/FE_infog_x2.png" alt="feedback elements infographic">
+        </picture>
+      </div>
+
+      <div>
+          <p>
+            Once I had an MVP, I did qualitative user tests with 5 testers, which gave me valuable feedback which was implemented as part of the course.
           </p>
           <p>
-            Next we spent a lot of time defining the behaviour of each elements, when should we use what? For example: are toasts a good method for showing error messages (probably not), should we animate the system banners to make them more visible
-            and should they disappear on their own or should they be actively be clicked away by the user?
-          </p>
-          <p>
-            This information was hard to make digestible for the Style guide, so I designed an infographic that could help the UX team decide when to use which element.
+            The final step was to make sure my code was free of errors, easy to read and passed basic accessibility tests. To do this I added code linters W3C code linter and Atom-beautify to my development environment, ran my code through the W3C validator and fixed all warning and errors, checked color contrasts to make sure they passed the  AA contrast ratio and finally did cross-browser testing.
           </p>
         </div>
 
@@ -105,112 +102,22 @@
           </picture>
         </div>
 
-        <div class="text-width-projects">
-          <p>
-            Once this had been defined, we started the design phase. Going back to the competitor analysis we came up with several concepts that can be roughly categorized into pastell, full colour and white with a splash of colour.
-          </p>
-        </div>
-
-          <div>
-          <picture>
-            <source srcset="img/feedback_elements/fe_design_research_x1.png" media="(max-width:767px)">
-            <img class="project-images" src="img/feedback_elements/fe_design_research_x2.png" alt="design variation for feedback elements">
-          </picture>
-        </div>
-      </section>
-
-      <div class="text-width-projects">
-        <p>
-          To come to a decision we tested each design on a variety of pages. They not only had to fit different scenarios but also be visible on different colour backgrounds and layouts. After all, 25 UX designers across 12 different teams had to use
-          them.
-        </p>
-        <p>
-          We decided on two designs: full colour and white (with the inline banners also being full colour, as we were concerned about visibility). We then presented to the UX team and put it to a vote. The white design won, but there was feedback
-          that the full colour inline banner would be too aggressive in the checkout process. Others were concerned that the white design would not be visible as an inline banner without animation.
-        </p>
-      </div>
-
-      <section>
-        <div class="text-width-projects">
-          <h2>Testing</h2>
-          <p>
-            So we tested! As we were testing visibility and perception, we expanded our usual group of 5 testers to 15, so we could have quantitative and qualitative feedback. We did this as an xmas insights lounge inviting idealo newbies to
-            do a quick user test and celebrate christmas with sweets and Glühwein.
-          </p>
-        </div>
-
         <div>
-        <h3 class="text-width-projects">Version A: full colour</h3>
         <picture>
-          <source srcset="img/feedback_elements/FE_prototype_full_colour_x1.gif" media="(max-width:767px)">
-          <img class="project-images" src="img/feedback_elements/FE_prototype_full_colour_x2.gif" alt="prototype A-full colour">
+          <source srcset="img/feedback_elements/FE_infog_x1.png" media="(max-width:767px)">
+          <img class="project-images" src="img/feedback_elements/FE_infog_x2.png" alt="feedback elements infographic">
         </picture>
       </div>
 
-      <div>
-      <h3 class="text-width-projects">Version B: white with coloured lines</h3>
-      <picture>
-        <source srcset="img/feedback_elements/FE_prototype_white_x1.gif" media="(max-width:767px)">
-        <img class="project-images" src="img/feedback_elements/FE_prototype_white_x2.gif" alt="prototype B-white with coloured lines">
-      </picture>
-    </div>
-
-      </section>
-
-      <section>
         <div class="text-width-projects">
-          <h2>Prototype</h2>
           <p>
-            To test animation I built the prototype with Principle. This worked, but tools such as Axure would have been easier for the user tests.
+            I commited all changes, did a final push to Github and got the website live by using a hosting provider.
+          </p>
+          <p>
+            Even during the course I noticed a big change in how I could brief my designs and communicate in day to day working life. The course has enabled me to improve my design skills and given me an online presence I am proud of. Of course my goal is to continue to update the portfolio with new projects...it’s a project that will never truly be “done” so to say...
           </p>
         </div>
       </section>
-
-      <section>
-        <div class="text-width-projects">
-          <h2>Ideation</h2>
-          <p>
-            The results were surprising proving once again that testing is paramount. The white designs had more positive associations and were perceived as subtle. Users, upon asking, said they were concerned about visibility. But the test showed
-            the
-            designs, including the inline banners, were seen at each touchpoint (users didn’t know what we were testing and were given a task to complete).
-          </p>
-          <p>
-            The full coloured designs were also seen, but not as easily readable (white on full colour was hard to read). They were also perceived as aggressive and 3 testers thought they were being shown advertising, clicking the them away before
-            reading the content.
-          </p>
-          <p>
-            Using the results we amended the white designs to include a white inline banner. The tests also helped to get the backing of the team on the decision made.
-          </p>
-        </div>
-      </section>
-
-      <section>
-        <div class="text-width-projects">
-          <h2>Specs</h2>
-          <p>
-            As a final task we prepared the specs for the style guide, which brought its own set of challenges. This was the first project where animation was defined as part of a new element, how to show this in a sketch cloud file that doesn't
-            allow
-            gifs or animation?
-            We asked our frontend devs to explain what information they need, so each team can build the same animation. We decided to include this information as code snippets in the design system style guide (a project that had just started). For
-            the
-            designers, we created a folder with animation examples.
-          </p>
-        </div>
-          <div>
-          <picture>
-            <source srcset="img/feedback_elements/fe_specs_x1.png" media="(max-width:767px)">
-            <img class="project-images" src="img/feedback_elements/fe_specs_x2.png" alt="feedback elements specs">
-          </picture>
-        </div>
-      </section>
-
-      <div>
-      <h2 class="text-width-projects">Final feedback element designs</h2>
-      <picture>
-        <source srcset="img/feedback_elements/fe_final_designs_x1.png" media="(max-width:767px)">
-        <img class="project-images" src="img/feedback_elements/fe_final_designs_x2.png" alt="final designs">
-      </picture>
-    </div>
 
     </div>
   </main>

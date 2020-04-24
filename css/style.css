@@ -80,7 +80,7 @@ h4 {
 
 h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.75em;
+  font-size: 1.75em;
   font-weight: 500;
 }
 
@@ -150,6 +150,7 @@ a:active {
   max-width: 160px;
 }
 
+/* FOR PROJECT TITLES IN BOXES
 .bigtitles-projects {
   font-size: 1em;
   background-color: #f1f2ee;
@@ -160,7 +161,7 @@ a:active {
   width: 100%;
   max-width: 220px;
 }
-
+*/
 .button {
   display: inline-block;
   background-color: #fff;
@@ -283,11 +284,22 @@ a:active {
   margin: 30px;
   padding: 20px;
 }
+
 .personas {
   max-width: 800px;
 }
 
-.social>h2 {
+.skills-tools .container {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.skills-tools .row {
+  display: inline-block;
+}
+
+.social > h2 {
   margin: 0;
   padding-bottom: 20px;
 }
@@ -305,10 +317,6 @@ a:active {
 #hero-about {
   background-color: #EAD557;
   padding: 30px;
-}
-
-#center-text {
-  text-align: center;
 }
 
 #tools {
