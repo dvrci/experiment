@@ -290,8 +290,13 @@ a:active {
 }
 
 .skills-tools .container {
+  text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.skills-tools .row {
+  display: inline-block;
 }
 
 .social > h2 {
@@ -468,6 +473,16 @@ a:active {
     background-color: #f1f2ee;
     border: 15px solid #fff;
     margin: 0 20px;
+  }
+
+  .skills-tools .container {
+    text-align: unset;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .skills-tools .row {
+    display: unset;
   }
 
   #hero {
