@@ -119,7 +119,7 @@ a:focus {
 }
 
 a:active {
-  color: #994c30;
+  color: #006580;
 }
 
 .active {
@@ -290,13 +290,8 @@ a:active {
 }
 
 .skills-tools .container {
-  text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.skills-tools .row {
-  display: inline-block;
 }
 
 .social > h2 {
